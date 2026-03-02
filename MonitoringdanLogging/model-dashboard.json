@@ -1,0 +1,22 @@
+{
+  "dashboard": {
+    "title": "Telco Churn Model Monitoring",
+    "panels": [
+      {
+        "title": "Requests Total",
+        "type": "stat",
+        "targets": [{ "expr": "model_requests_total" }]
+      },
+      {
+        "title": "Request Latency",
+        "type": "timeseries",
+        "targets": [{ "expr": "model_request_duration_seconds" }]
+      },
+      {
+        "title": "Churn Ratio",
+        "type": "gauge",
+        "targets": [{ "expr": "churn_prediction_ratio" }]
+      }
+    ]
+  }
+}
