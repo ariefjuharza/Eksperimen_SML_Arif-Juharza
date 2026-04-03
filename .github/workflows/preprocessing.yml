@@ -10,6 +10,9 @@ on:
       - '.github/workflows/preprocessing.yml'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   preprocess:
     runs-on: ubuntu-latest
