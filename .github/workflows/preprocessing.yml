@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'breast_cancer_raw/**'
-      - 'preprocessing/automate_*.py'
+      - 'preprocessing/**'
       - '.github/workflows/preprocessing.yml'
   workflow_dispatch:
 
