@@ -7,7 +7,7 @@ import joblib
 def run_preprocessing():
     print("Starting preprocessing...")
     raw_path = os.path.join(os.path.dirname(__file__), '..', 'breast_cancer_raw', 'breast_cancer.csv')
-    out_dir = os.path.join(os.path.dirname(__file__), '..', 'breast_cancer_preprocessing')
+    out_dir = os.path.join(os.path.dirname(__file__), 'breast_cancer_preprocessing')
     
     os.makedirs(out_dir, exist_ok=True)
     
